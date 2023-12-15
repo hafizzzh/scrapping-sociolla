@@ -7,7 +7,7 @@ import os
 from datetime import date
 
 base_url = "https://catalog-api2.sociolla.com/search"
-# Put brand slug here
+# Declare the brand slug here
 brand_slug = "558_cosrx"
 limit = 50
 skip = 0
@@ -28,7 +28,7 @@ while keepLoop:
             "limit": limit,
             "skip": skip
         }
-    print
+    
     response = requests.get(base_url, 
                             params=query_params, 
                             headers=headers)
